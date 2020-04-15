@@ -8,6 +8,7 @@ html{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 .container{
     width: 76%;
@@ -98,9 +99,74 @@ html{
     color: #1A68B5;
     background-color: white;
 }
-
-.slide-img{
-    padding: 0;
-    outline: 0;
-    /* margin: auto; */
+.slide-1{
+    background-image: url(../img/slogan-slider1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 650px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.slide-2{
+    background-image: url(../img/slogan-slider2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 650px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.slide-3{
+    background-image: url(../img/slogan-slider3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 650px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.slide-info{
+    width: 635px;
+    height: 228px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slide-info-h3{
+    color: #393939;
+    font-size: 48px;
+    font-weight: 800;
+}
+.slide-info-p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+.slide-info-button{
+    padding: 10px 25px;
+    background-color: #1A68B5;
+    color: white;
+    border: 2px solid #1A68B5;
+    transition: all 0.5s ease-in-out;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.slide-info-button:hover{
+    color: #1A68B5;
+    background-color: transparent;
+}
+.slider-arrows{
+    position: absolute;
+}
+.slider-arrow-left{
+    top: 318px;
+    left: -93px;
+}
+.slider-arrow-right{
+    top: 318px;
+    left: 1128px;
 }

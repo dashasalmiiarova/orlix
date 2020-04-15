@@ -7,5 +7,9 @@ $('.slogan-carousel').slick({
   cssEase: 'linear',
   arrows: true,
   centerMode: true,
-  centerPadding: '0px'
+  centerPadding: '0px',
+  prevArrow: '<img src="img/slider-arrow-left.svg" class="slider-arrows slider-arrow-left" alt="">',
+  nextArrow: '<img src="img/slider-arrow-right.svg" class="slider-arrows slider-arrow-right" alt=""></img>'
 })
+
+   
