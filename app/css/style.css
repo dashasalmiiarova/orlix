@@ -11,11 +11,11 @@ html{
     text-decoration: none;
 }
 .container{
-    width: 76%;
+    width: 79%;
     margin: auto;
 }
 .container2{
-    width: 90%;
+    width: 70%;
     margin: auto;
 }
 .info-line{
@@ -36,7 +36,6 @@ html{
 }
 
 .navbar{
-    width: 1094px;
     height: 92px;
     display: flex;
     justify-content: space-between;
@@ -99,6 +98,7 @@ html{
     color: #1A68B5;
     background-color: white;
 }
+
 .slide-1{
     background-image: url(../img/slogan-slider1.png);
     background-repeat: no-repeat;
@@ -160,13 +160,97 @@ html{
     background-color: transparent;
 }
 .slider-arrows{
-    position: absolute;
+    position: relative;
 }
 .slider-arrow-left{
-    top: 318px;
-    left: -93px;
+    top: 375px;
+    left: -83px;
 }
 .slider-arrow-right{
-    top: 318px;
-    left: 1128px;
+    top: -321px;
+    left: 1167px;
+}
+.slick-dots li button::before {
+    position: relative !important;
+    top: -80px !important;
+    font-size: 30px !important;
+    color: #FFFFFF !important;
+    content: '■' !important;
+    opacity: 1 !important;
+}
+.slick-dots li.slick-active button::before {
+    color: #1A68B5 !important;
+    content: '■' !important;
+    opacity: 1 !important;
+}
+.o-nas{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 300px;
+}
+.o-nas-img{
+    border: 2px solid #1A68B5;
+    width: 238px;
+    height: 270px;
+}
+.o-nas-inner-img{
+    transform: translate(23px, -23px);
+}
+.o-nas-info{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.onas-subtitle-h2{
+    color: #4040401C;
+    font-size: 50px;
+    font-weight: 900;
+}
+.o-nas-title-inside{
+    transform: translate(33px,-40px);
+}
+.onas-title-h3{
+    color: #393939;
+    font-size: 24px;
+    font-weight: 900;
+}
+.onas-p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #393939;
+    line-height: 19px;
+}
+
+.o-nas-bottom{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+.o-nas-bottom-img-div{
+    border:2px solid #1A68B5;
+    width: 80px;
+    height: 80px;
+}
+.o-nas-bottom-img{
+    transform: translate(11px, 10px);
+}
+.name{
+    font-size: 16px;
+    font-weight: 900;
+}
+.status{
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.signature{
+    margin-top: 7px;
+    width: 141px;
 }

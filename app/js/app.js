@@ -4,7 +4,7 @@ $('.slogan-carousel').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   speed: 600,
-  cssEase: 'linear',
+  fade: true,
   arrows: true,
   centerMode: true,
   centerPadding: '0px',
