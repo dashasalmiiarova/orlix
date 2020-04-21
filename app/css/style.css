@@ -321,23 +321,28 @@
     width: 24px;
     padding: 17px;
 }
-
 .interior{
     margin-top: 92px;
     display: flex;
     justify-content: space-between;
 }
 .interior-info{
-    width: 403px;
-    height: 403px;
+    width: 370px;
+    height: 370px;
     box-shadow: 5px 5px 10px 10px #81818150;
-    padding: 20px 50px 40px 40px;
-    transform: translate(30px, 40px);
+    padding: 10px 60px;
+    
     background-color: white;
     z-index: 3;
 }
+.interior-info-tran{
+    transform: translate(45px, 80px);
+}
+.exterior-info{
+    transform: translate(-45px, 80px);
+}
 .interior-title-inside{
-    transform: translate(45px,-40px);
+    transform: translate(-120px, 25px);
 }
 .interior-subtitle{
     font-size: 50px;
@@ -350,6 +355,7 @@
     display: flex;
     justify-content: space-between;
     height: 119px;
+    margin-top: 25px;
 }
 .li-interior{
     list-style: none;
@@ -371,4 +377,52 @@
     width: 536px;
     height: 536px;
     z-index: 2;
+}
+.interior-titles{
+    display: flex;
+    justify-content: center !important;
+}
+.galeria{
+    background-image: url(../img/cechy-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 90px;
+    height: 544px;
+}
+.galeria-inside{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+.galeria-carousel{
+    width: 100%;
+}
+.galeria-slide img{
+    width: 202px;
+    margin: auto;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.slick-center {
+    width: 450px;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.galeria-slider-arrows{
+    position: relative;
+}
+.galeria-arrow-left{
+    top: 180px;
+    left: -94px;
+}
+.galeria-arrow-right{
+    top: -13px;
+    left: 1059px;
+}
+.galeria-title-inside{
+    transform: translate(45px, -40px);
 }
