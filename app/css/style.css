@@ -10,6 +10,28 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input:active, input:focus {
+    outline: none;
+  }
+  input::-moz-focus-inner {
+    border: 0;
+  }
+button:active, button:focus {
+    outline: none;
+  }
+  button::-moz-focus-inner {
+    border: 0;
+}
 .container{
     width: 79%;
     margin: auto;
@@ -397,32 +419,193 @@
 }
 .galeria-carousel{
     width: 100%;
-}
-.galeria-slide img{
-    width: 202px;
     margin: auto;
-    -webkit-transform: scale(0.9);
+}
+/* div */
+.galeria-slide{
+    /* height: 143px; */
+    margin: auto;
+    /* -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
+    transform: scale(0.9); */
+}
+.galeria-slick-img{
+    width: 220px;
+    margin: auto;
     transform: scale(0.9);
+    margin-top: 50px;
+}
+/* .galeria-carousel img{
+    width: 202px;
+    transform: scale(0.9);
+} */
+.galeria-carousel .slick-current img{
+    width: 100%;
+    /* height: 100%; */
+    transform: scale(1.3);
+    margin: auto;
 }
 
-.slick-center {
-    width: 450px;
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    transform: scale(1.5);
-}
 .galeria-slider-arrows{
     position: relative;
 }
 .galeria-arrow-left{
-    top: 180px;
+    top: 140px;
     left: -94px;
 }
 .galeria-arrow-right{
-    top: -13px;
+    top: -147px;
     left: 1059px;
 }
 .galeria-title-inside{
     transform: translate(45px, -40px);
+}
+.spredaz{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.sprzedaz-title{
+    color: #393939;
+    font-size: 24px;
+    font-weight: 900;
+}
+.sprzedaz-title-small{
+    width: 200px !important;
+}
+.sprzedaz-title-inside{
+    width: 200px;
+    transform: translate(418px, -35px);
+}
+.sprzedaz-top-p{
+    width: 70%;
+    font-size: 14px;
+    color: #393939;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 62px;
+}
+.sprzedaz-info{
+    display: flex;
+    justify-content: space-between;
+}
+.sprzedaz-img-div{
+    width: 237px;
+    height: 295px;
+    border: 2px solid #1A68B5;
+
+}
+.sprzedaz-img{
+    width: 237px;
+    height: 295px;
+    transform: translate(15px, 15px);
+}
+.sprzedaz-info-inside{
+    width: 33.3%;
+}
+.sprzedaz-h5{
+    color: #393939;
+    font-size: 24px;
+    font-weight: 900;
+}
+.sprzedaz-title-p{
+    margin-top: 3px;
+    color: #676767;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sprzedaz-p{
+    margin-top: 26px;
+    color: #393939;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sprzedaz-contact{
+    margin-top: 104px;
+    display: flex;
+    flex-direction: column;
+}
+.phone-contact-sprzedaz{
+    color: #393939;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sprzedaz-phone{
+    color: #1A68B5;
+}
+.email-contact-sprzedaz{
+    color: #393939;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sprzedaz-mail{
+    color: #1A68B5;
+}
+
+.sprzedaz-form-main{
+    width: 33.3%;
+}
+.form-info-h4{
+    font-size: 24px;
+    color: #393939;
+    margin-bottom: 5px;
+    /* width: 294px; */
+    /* border-bottom: 2px solid #1A68B5; */
+    /* border-width: 132px; */
+}
+.form-info-span{
+    color: #1A68B5;
+}
+.bottom-line-sprzedaz{
+    height: 2px;
+    width: 132px;
+    color: black !important;
+    display: block;
+    z-index: 10;
+    /* border-bottom: 2px 132px solid #1A68B5; */
+    margin-bottom: 35px;
+}
+.form-dane{
+    width: 300px;
+    height: 39px;
+    border: 2px solid #777777;
+    transition: all 0.5s ease-in-out;
+    font-size: 16px;
+}
+.form-dane::placeholder{
+    font-size: 16px;
+    color: #777777;
+    padding: 20px;
+    outline: none;
+    padding: 20px;
+}
+.form-dane::placeholder:focus{
+    color: #1A68B5;
+}
+.form-dane:focus{
+    color: #1A68B5;
+    border: 2px solid #1A68B5;
+}
+.form-telefon{
+    margin-top: 20px;
+}
+textarea{
+    margin-top: 20px;
+    display: block;
+    width: 260px;
+    height: 123px;
+    background-color: white;
+    font-size: 16px;
+    border: 2px solid #777777;
+    transition: all 0.5s ease-in-out;
+    padding: 20px;
+    outline: none;
+    margin-bottom: 40px;
+    resize: none;
+}
+textarea:focus{
+    border: 2px solid #1A68B5;
+}
+.checkbox-cl{
+    color: #777777;
 }
