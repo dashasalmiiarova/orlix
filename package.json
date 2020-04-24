@@ -18,6 +18,10 @@
     "gulp": "^4.0.2",
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^2.0.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "mapbox": "^1.0.0-beta10"
+  },
+  "dependencies": {
+    "mapbox-gl": "^1.9.1"
   }
 }
