@@ -771,3 +771,58 @@ input:focus:-ms-input-placeholder {
     text-decoration: none;
     color: #393939;
 }
+
+/* -------------------------PROJEKTY PAGE -------------------------------------------- */
+.isotop-galery{
+    margin-top: 68px;
+    margin-bottom: 100px;
+}
+.grid-button{
+    font-size: 14px;
+    font-weight: 400;
+    color: #1A68B5;
+    border: none;
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.grid-button:hover{
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1A68B5;
+    margin-bottom: 9px;
+    border-bottom: 2px solid #1A68B5;
+}
+.grid-button:focus{
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1A68B5;
+    margin-bottom: 9px;
+    border-bottom: 2px solid #1A68B5;
+}
+.is-checked{
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1A68B5;
+    margin-bottom: 9px;
+    border-bottom: 2px solid #1A68B5;
+}
+
+.grid{
+    width: 1140px; 
+}
+.portfolio-grid {
+    max-height: 947px;
+}
+.grid-item img{
+    width: 252px;
+    height: 130px;
+    margin-bottom: 20px;
+}
+.gutter-sizer{
+    width: 40px;
+}

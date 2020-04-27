@@ -7,9 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <title>Strona Głowna</title>
+    <title>Nasze Projekty</title>
 </head>
 <body>
     <div class="info-line">
@@ -23,37 +21,98 @@
         <div class="navbar container">
             <a href="#"> <img src="img/logo.svg" alt=""> </a>
             <ul class="menu">
-                <li class="menu-item"> <a class="menu-item-link underline" href="#">Strona Główna</a> </li>
-                <li class="menu-item"> <a class="menu-item-link underline" href="projekty.html">Naze projekty</a> </li>
+                <li class="menu-item"> <a class="menu-item-link underline" href="index.html">Strona Główna</a> </li>
+                <li class="menu-item"> <a class="menu-item-link underline" href="#">Naze projekty</a> </li>
                 <li class="menu-item"> <a class="menu-item-link underline" href="#">O nas</a> </li>
                 <li class="menu-item"> <a class="menu-item-link kontakt-button" href="#">Kontakt</a> </li>
             </ul>
         </div>
     </header>
-    
     <div class="contant">
-        <div class="slogan container">
-            <div class="slogan-carousel">
-                <div class="slide-1 slide" id="slide-1">
-                    <div class="slide-info">
-                        <h3 class="slide-info-h3">Chcesz wybudować dom?</h3>
-                        <p class="slide-info-p">Zaproponujemy Ci najlepsze rozwiązania</p>
-                        <a href="#" class="slide-info-button">Dział sprzedaży</a>
-                    </div>
+        <div class="isotop-galery container">
+            <div class="portfolio-grid-filter">
+                <div class="grid-filter filter-button-group">
+                    <button data-filter='*' class="grid-button is-checked underline-from-left">Wszystkie</button>
+                    <button data-filter='.exterior-iso' class="grid-button underline-from-left">Exterior</button>
+                    <button data-filter='.interior-iso' class="grid-button underline-from-left">Interior</button>
+                    <button data-filter='.domy' class="grid-button underline-from-left">Domy</button>
+                    <button data-filter='.mieszkania' class="grid-button underline-from-left">Mieszkania</button>
+                    <button data-filter='.projekty' class="grid-button underline-from-left">Projekty architektoniczne</button>
+                </div> 
+            </div>
+            <div class="portfolio-grid grid" data-ignore-hash="true">
+                <div class="gutter-sizer"></div>
+                <div class="grid-item domy exterior-iso" data-category="domy exterior-iso">
+                    <a class="ling-img" href="img/isotop1.jpg"><img src="img/isotop1.jpg" alt="" class="grid-img"></a>
                 </div>
-                <div class="slide-2 slide" id="slide-2">
-                    <div class="slide-info">
-                        <h3 class="slide-info-h3">Chcesz wybudować dom?</h3>
-                        <p class="slide-info-p">Zaproponujemy Ci najlepsze rozwiązania</p>
-                        <a href="#" class="slide-info-button">Dział sprzedaży</a>
-                    </div>
+                <div class="grid-item domy exterior-iso" data-category="domy exterior-iso">
+                    <a class="ling-img" href="img/isotop2.jpg"><img src="img/isotop2.jpg" alt="" class="grid-img"></a>
                 </div>
-                <div class="slide-3 slide" id="slide-3">   
-                    <div class="slide-info">
-                        <h3 class="slide-info-h3">Chcesz wybudować dom?</h3>
-                        <p class="slide-info-p">Zaproponujemy Ci najlepsze rozwiązania</p>
-                        <a href="#" class="slide-info-button">Dział sprzedaży</a>
-                    </div>
+                <div class="grid-item domy exterior-iso projekty" data-category="domy exterior-iso projekty">
+                    <a class="ling-img" href="img/isotop3.jpg"><img src="img/isotop3.jpg" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy exterior-iso" data-categoryr="domy exterior-iso">
+                    <a class="ling-img" href="img/isotop4.jpg"><img src="img/isotop4.jpg" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy exterior-iso projekty" data-category="domy exterior-iso projekty">
+                    <a class="ling-img" href="img/isotop5.jpg"><img src="img/isotop5.jpg" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy exterior-iso" data-category="domy exterior-iso">
+                    <a class="ling-img" href="img/isotop6.jpg"><img src="img/isotop6.jpg" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy exterior-iso" data-category="domy exterior-iso">
+                    <a class="ling-img" href="img/isotop7.jpg"><img src="img/isotop7.jpg" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy exterior-iso projekty" data-category="domy exterior-iso projekty">
+                    <a class="ling-img" href="img/isotop8.jpg"><img src="img/isotop8.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item mieszkania interior-iso" data-category="mieszkania interior-iso">
+                    <a class="ling-img" href="img/isotop9.jpg"><img src="img/isotop9.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy exterior-iso" data-category="domy exterior-iso">
+                    <a class="ling-img" href="img/isotop10.jpg"><img src="img/isotop10.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item mieszkania interior-iso" data-category="mieszkania interior-iso">
+                    <a class="ling-img" href="img/isotop11.jpg"><img src="img/isotop11.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy exterior-iso" data-category="domy exterior-iso">
+                    <a class="ling-img" href="img/isotop12.jpg"><img src="img/isotop12.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy exterior-iso" data-category="domy exterior-iso">
+                    <a class="ling-img" href="img/isotop13.jpg"><img src="img/isotop13.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy exterior-iso" data-category="domy exterior-iso">
+                    <a class="ling-img" href="img/isotop14.jpg"><img src="img/isotop14.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item interior-iso domy" data-category="interior-iso domy">
+                    <a class="ling-img" href="img/isotop15.jpg"><img src="img/isotop15.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy exterior-iso" data-category="domy exterior-iso">
+                    <a class="ling-img" href="img/isotop16.jpg"><img src="img/isotop16.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item mieszkania interior-iso" data-category="mieszkania interior-iso">
+                    <a class="ling-img" href="img/isotop17.jpg"><img src="img/isotop17.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy" data-category="domy">
+                    <a class="ling-img" href="img/isotop18.jpg"><img src="img/isotop18.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item projekty" data-category="projekty">
+                    <a class="ling-img" href="img/isotop19.jpg"><img src="img/isotop19.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item mieszkania interior-iso" data-category="mieszkania interior-iso">
+                    <a class="ling-img" href="img/isotop20.jpg"><img src="img/isotop20.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy" data-category="domy">
+                    <a class="ling-img" href="img/isotop21.jpg"><img src="img/isotop21.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy interior-iso" data-category="domy interior-iso">
+                    <a class="ling-img" href="img/isotop22.jpg"><img src="img/isotop22.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy" data-category="domy">
+                    <a class="ling-img" href="img/isotop23.jpg"><img src="img/isotop23.jpg" id="counter2" alt="" class="grid-img"> </a>
+                </div>
+                <div class="grid-item domy" data-category="domy">
+                    <a class="ling-img" href="img/isotop24.jpg"><img src="img/isotop24.jpg" id="counter2" alt="" class="grid-img"> </a>
                 </div>
             </div>
         </div>
@@ -138,107 +197,6 @@
                     </div>     
                 </div>
             </div>
-            
-        </div>
-        <div class="terior container2">
-            <div class="interior">
-                <div class="interior-info interior-info-tran">
-                    <div class="interior-titles">
-                        <div class="o-nas-subtitle">
-                            <h2 class="onas-subtitle-h2 interior-subtitle">Interior</h2>
-                        </div>
-                        <div class="interior-title-inside">
-                            <h3 class="onas-title-h3 interior-title">Interior</h3>
-                        </div>
-                    </div>
-                    <ul class="ul-interior">
-                        <div class="left-li">
-                            <li class="li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-interior"><div class="div-span"></div>  Some punkt</li>
-                        </div>
-                        <div class="right-li">
-                            <li class="li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-interior"><div class="div-span"></div>  Some punkt</li>
-                        </div>
-                        
-                    </ul>
-                    <p class="p-interior">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc ante, aliquet a massa non, tincidunt lacinia purus. Fusce dictum ac justo volutpat malesuada. Donec ornare scelerisque justo. Donec fringilla blandit eleifend. Nunc augue diam, fermentum vitae lectus dignissim, rutrum fermentum quam. Morbi nunc eros, semper vel 
-                    </p>
-                </div>
-                <div class="interior-img">
-                    <img src="img/interior.png" alt="">
-                </div>
-            </div>
-            <div class="exterior interior">
-                <div class="exterior-img interior-img">
-                    <img src="img/exterior.png" alt="">
-                </div>
-                <div class="interior-info exterior-info">
-                    <div class="exterior-titles interior-titles">
-                        <div class="o-nas-subtitle">
-                            <h2 class="onas-subtitle-h2 interior-subtitle">Exterior</h2>
-                        </div>
-                        <div class="interior-title-inside">
-                            <h3 class="onas-title-h3 interior-title">Exterior</h3>
-                        </div>
-                    </div>
-                    <ul class="ul-exterior ul-interior">
-                        <div class="left-li">
-                            <li class="li-exterior li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-exterior li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-exterior li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-exterior li-interior"><div class="div-span"></div>  Some punkt</li>
-                        </div>
-                        <div class="right-li">
-                            <li class="li-exterior li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-exterior li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-exterior li-interior"><div class="div-span"></div>  Some punkt</li>
-                            <li class="li-exterior li-interior"><div class="div-span"></div>  Some punkt</li>
-                        </div>
-                    </ul>
-                    <p class="p-exterior p-interior">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc ante, aliquet a massa non, tincidunt lacinia purus. Fusce dictum ac justo volutpat malesuada. Donec ornare scelerisque justo. Donec fringilla blandit eleifend. Nunc augue diam, fermentum vitae lectus dignissim, rutrum fermentum quam. Morbi nunc eros, semper vel 
-                    </p>
-                </div>
-                
-            </div>
-        </div>
-        <div class="galeria">
-            <div class="galeria-inside container2">
-                <div class="cechy-titles">
-                    <div class="o-nas-subtitle">
-                        <h2 class="onas-subtitle-h2 cechy-subtitle">Galeria</h2>
-                    </div>
-                    <div class="galeria-title-inside">
-                        <h3 class="onas-title-h3 cechy-title">Galeria</h3>
-                    </div>
-                </div>
-                <div class="galeria-carousel" id="galeria-slider">
-                    <div class="galeria-slide-1 galeria-slide" id="galeria-img1">
-                        <img class="galeria-slick-img" src="img/galeria-slick1.png" alt="">
-                    </div>
-                    <div class="galeria-slide-2 galeria-slide" id="galeria-img2">
-                        <img class="galeria-slick-img" src="img/galeria-slick2.jpg" alt="">
-                    </div>
-                    <div class="galeria-slide-3 galeria-slide" id="galeria-img3">
-                        <img class="galeria-slick-img" src="img/galeria-slider1.png" alt="">
-                    </div>
-                    <div class="galeria-slide-4 galeria-slide" id="galeria-img4">
-                        <img class="galeria-slick-img" src="img/galeria-slick4.jpg" alt="">
-                    </div>
-                    <div class="galeria-slide-5 galeria-slide" id="galeria-img5">
-                        <img class="galeria-slick-img" src="img/ galeria-slick5.jpg" alt="">
-                    </div>
-                    <div class="galeria-slide-6 galeria-slide" id="galeria-img6">
-                        <img class="galeria-slick-img" src="img/galeria-slick6.jpg" alt="">
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="spredaz container2">
             <div class="sprzez-top">
@@ -293,6 +251,7 @@
                                <button class="submit-button">Wyślij</button>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -301,58 +260,60 @@
         </div>
     </div>
     <footer>
-        <div class="footer-main container2">
-            <div class="footer-column">
-                <div class="footer-left-title">
-                    <h4 class="footer-title-h4">Kontakt z nami</h4>
+    <div class="footer-main container2">
+        <div class="footer-column">
+            <div class="footer-left-title">
+                <h4 class="footer-title-h4">Kontakt z nami</h4>
+            </div>
+            <div class="footer-contact">
+                <a class="contact adress" href=" http://maps.google.com/?q=20-004 Lublin, ul.Gabriela Narutowicza 22/3" target="_blank"> <span class="span-footer">Adres: </span>ul.Gabriela Narutowicza 22/3, 20-004</a>
+                <a class="contact adress" href="tel:+48 985 854 857"><span class="span-footer">Telefon kontaktowy: </span>+48 985 854 857</a>
+                <a class="contact adress" href="mailto:info@orlix.com.pl"> <span class="span-footer">Email: </span>info@orlix.com.pl</a>
+            </div>
+            <div class="footer-social-links">
+                <div class="facebook-div">
+                    <a href="https://www.facebook.com/" class="social facebook"><i class="fab fa-facebook-f"></i></i></a>
                 </div>
-                <div class="footer-contact">
-                    <a class="contact adress" href=" http://maps.google.com/?q=20-004 Lublin, ul.Gabriela Narutowicza 22/3" target="_blank"> <span class="span-footer">Adres: </span>ul.Gabriela Narutowicza 22/3, 20-004</a>
-                    <a class="contact adress" href="tel:+48 985 854 857"><span class="span-footer">Telefon kontaktowy: </span>+48 985 854 857</a>
-                    <a class="contact adress" href="mailto:info@orlix.com.pl"> <span class="span-footer">Email: </span>info@orlix.com.pl</a>
-                </div>
-                <div class="footer-social-links">
-                    <div class="facebook-div">
-                        <a href="https://www.facebook.com/" class="social facebook"><i class="fab fa-facebook-f"></i></i></a>
-                    </div>
                     <a href="https://www.linkedin.com/" class="social linkedin"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://twitter.com/explore" class="social twitter"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.youtube.com/" class="social"><i class="fab fa-youtube"></i></a>
                 </div>
+        </div>
+        <div class="footer-column">
+            <div class="footer-left-title">
+                <h4 class="footer-title-h4">Korzystne Linki</h4>
             </div>
-            <div class="footer-column">
-                <div class="footer-left-title">
-                    <h4 class="footer-title-h4">Korzystne Linki</h4>
-                </div>
-                <div class="menu-footer">
-                    <a href="#" class="menu-links">Galeria</a>
-                    <a href="#" class="menu-links">Kontakt</a>
-                    <a href="#" class="menu-links">Polityka prywatności</a>
-                    <a href="#" class="menu-links">Nasze projekty</a>
-                </div>
+            <div class="menu-footer">
+                <a href="#" class="menu-links">Galeria</a>
+                <a href="#" class="menu-links">Kontakt</a>
+                <a href="#" class="menu-links">Polityka prywatności</a>
+                <a href="#" class="menu-links">Nasze projekty</a>
             </div>
-            <div class="footer-column">
-                <div class="footer-left-title">
-                    <h4 class="footer-title-h4">Zadzwoń do nas teraz</h4>
-                </div>
-                <div class="column-info">
-                    <a href="tel:+ 48 794 473 984" class="footer-numbner">+ 48 794 473 984</a>
-                    <a href="#"><img src="img/logo.svg" alt="" class="footer-logo"> </a>
-                </div>
+        </div>   
+        <div class="footer-column">
+            <div class="footer-left-title">
+                <h4 class="footer-title-h4">Zadzwoń do nas teraz</h4>
+            </div>
+            <div class="column-info">
+                <a href="tel:+ 48 794 473 984" class="footer-numbner">+ 48 794 473 984</a>
+                <a href="#"><img src="img/footer-logo-p.svg" alt=""> <img src="img/logo.svg" alt="" class="footer-logo"> </a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="bottom-inside container2">
-                <p class="all-rights">All rights reserved!</p>
-                <p class="agencja">Agencja Interaktywna TimDesign: <a href="https://timdesign.top/" class="link-bottom">timdesign.top</a></p>
-            </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="bottom-inside container2">
+            <p class="all-rights">All rights reserved!</p>
+            <p class="agencja">Agencja Interaktywna TimDesign: <a href="https://timdesign.top/" class="link-bottom">timdesign.top</a></p>
         </div>
+    </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-    </script>
-    <script src="js/slick.js"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
-    <script src="js/app.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+        <script src="js/isotope.pkgd.js"></script>
+        <script src="js/layout-modes/fit-rows.js"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+        <script src="js/app-proj.js"></script>
+    </body>
+
 </html>

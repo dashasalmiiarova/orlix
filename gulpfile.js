@@ -12,7 +12,7 @@ gulp.task('mincss', function(){
         .pipe(browserSync.reload({stream: true}))
 });
 gulp.task('html', function(){
-    return gulp.src('app/index.html')
+    return gulp.src('app/*.html')
     .pipe(browserSync.reload({stream: true}))
 });
 gulp.task('js', function(){
@@ -28,7 +28,7 @@ gulp.task('browser-sync', function() {
 });
 gulp.task('watch', function(){
     gulp.watch('app/css/style.css', gulp.parallel('mincss'))
-    gulp.watch('app/index.html', gulp.parallel('html'))
+    gulp.watch('app/*.html', gulp.parallel('html'))
     gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 gulp.task('default', gulp.parallel('mincss', 'js', 'browser-sync', 'watch'))
