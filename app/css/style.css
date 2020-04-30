@@ -10,11 +10,7 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
-/* input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-} */
+
 select{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -81,6 +77,9 @@ button:active, button:focus {
 .menu-item-link:hover{
     color: #1A68B5;
 }
+.menu-item-link:focus{
+    color: #1A68B5;
+}
 .underline{
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -107,6 +106,9 @@ button:active, button:focus {
     transition-timing-function: ease-out;
 }
 .underline:hover:before{
+    right: 0;
+}
+.underline:focus:before{
     right: 0;
 }
 .kontakt-button{
@@ -736,11 +738,7 @@ input:focus:-ms-input-placeholder {
     color: #1A68B5;
     margin-top: 15px;
 }
-.footer-logo{
-    margin-top: 71px;
-    display: flex;
-    align-self: start;
-}
+
 .column-info{
     display: flex;
     flex-direction: column;
@@ -770,7 +768,24 @@ input:focus:-ms-input-placeholder {
     font-weight: 700;
     text-decoration: none;
     color: #393939;
+    transition: all 0.5s ease-in-out;
 }
+.link-bottom:hover{
+    color: #1A68B5;
+}
+.footer-logo-div{
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    max-height: 50px;
+    flex-direction: row;
+}
+.footer-logo{
+    width: 130px;
+    margin-top: 71px;
+}
+
 
 /* -------------------------PROJEKTY PAGE -------------------------------------------- */
 .isotop-galery{
@@ -825,4 +840,126 @@ input:focus:-ms-input-placeholder {
 }
 .gutter-sizer{
     width: 40px;
+}
+/* --------------------------------------- O NAS PAGE ------------------------------------------------*/
+.onas-main{
+    height: 643px;
+}
+.onas-new-info{
+    height: 850px;
+}
+.o-nas-p{
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+}
+.galeria-slide-onas{
+    margin: auto;
+}
+.galeria-carousel-onas{
+    width: 100%;
+    margin: auto;
+}
+.count{
+    color: white;
+}
+.nas-subtitle{
+    color: rgba(255, 255, 255, 0.11);
+}
+.nas-title{
+    color: white;
+    transform: translate(-85px, 7px);
+}
+.onas-p-div{
+    margin-top: 40px;
+
+}
+.counter-div{
+    margin-top: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.count{
+    font-weight: 700;
+    font-size: 26px;
+    color: #1A68B5;
+    margin: auto;
+}
+.counter-info{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+.onas-white-block{
+    margin-top: 40px;
+    background-color: white;
+    padding: 44px 92px 60px 60px;
+    box-shadow: 5px 10px 10px #7c78783f;
+}
+.cehy-onas{
+    margin-top: 90px !important;
+}
+.onas-block-title{
+    text-transform: uppercase;
+    color: #1A68B5;
+    font-size: 36px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+.insie-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inside-block-img-div{
+    border: 2px solid #1A68B5;
+    width: 200px;
+    height: 117px;
+}
+.inside-block-img{
+    transform: translate(15px, 15px);
+}
+.inside-block-p-div{
+    width: 65%;
+}
+.block-mt{
+    margin-top: 103px;
+}
+.footer-column-inside{
+    margin: auto;
+}
+.cechy-o-nas{
+    background-image: url(../img/cechy-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 15px;
+}
+.kontact-block-div{
+    margin-top: 59px;
+    display: flex;
+    flex-direction: row;
+    height: 439px;
+    margin-bottom: 60px;
+}
+.kont-block{
+    padding: 26px 33px 40px 33px;
+    width: 401px;
+}
+.kon-black{
+    background-color: #212121;
+}
+.kon-blue{
+    background-color: #1A68B5;
+}
+.kon-block-title{
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
 }

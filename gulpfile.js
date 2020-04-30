@@ -11,6 +11,14 @@ gulp.task('mincss', function(){
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))
 });
+gulp.task('js', function(){
+    return gulp.src([
+        'node_modules/countup.js/dist/countUp.min.js'
+    ])
+    .pipe(concat('libs.min.js'))
+    .pipe(gulp.dest('app/js'))
+    .pipe(browserSync.reload({stream: true}))
+});
 gulp.task('html', function(){
     return gulp.src('app/*.html')
     .pipe(browserSync.reload({stream: true}))
