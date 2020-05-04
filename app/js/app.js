@@ -52,4 +52,32 @@ map.on('click', function(e) {
     .addTo(map);
 });
 
+// var qual = document.getElementsByClassName("quality");
+// qual.addEventListener("mouseover", function(event){
+//   event.find('img').attr('src', '../img/qualityw.svg');
+// })
+$('.quality').on('mouseover', function() {
+  $(this).find('img').attr('src', '../img/qualityw.svg');
+});
+$('.quality').on('mouseout', function() {
+  $(this).find('img').attr('src', '../img/quality.svg');
+});
+$('.coordination').on('mouseover', function() {
+  $(this).find('img').attr('src', '../img/coordinationw.svg');
+});
+$('.coordination').on('mouseout', function() {
+  $(this).find('img').attr('src', '../img/coordination.svg');
+});
+$('.value').on('mouseover', function() {
+  $(this).find('img').attr('src', '../img/valuew.svg');
+});
+$('.value').on('mouseout', function() {
+  $(this).find('img').attr('src', '../img/value.svg');
+});
+$('.team').on('mouseover', function() {
+  $(this).find('img').attr('src', '../img/teamw.svg');
+});
+$('.team').on('mouseout', function() {
+  $(this).find('img').attr('src', '../img/team.svg');
+});
 
