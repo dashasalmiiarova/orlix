@@ -118,3 +118,8 @@ $('.team').on('mouseout', function() {
   $(this).find('img').attr('src', '../img/team.svg');
 });
 
+//Magnific Pop Up
+$('.ling-img').magnificPopup({
+  type: 'image',
+  gallery:{enabled:true}
+});
