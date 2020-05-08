@@ -17,7 +17,21 @@ $('.slogan-carousel').slick({
   centerMode: true,
   centerPadding: '0px',
   prevArrow: '<img src="img/slider-arrow-left.svg" class="slider-arrows slider-arrow-left" alt="">',
-  nextArrow: '<img src="img/slider-arrow-right.svg" class="slider-arrows slider-arrow-right" alt=""></img>'
+  nextArrow: '<img src="img/slider-arrow-right.svg" class="slider-arrows slider-arrow-right" alt=""></img>',
+  mobileFirst: true,
+  responsive:[
+    {
+      breakpoint: 314,
+      setttings:{
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 400,
+        infinite: true,
+        arrows: false,
+        dots: false
+      }
+    }
+  ]
 })
 
 $('.galeria-carousel').slick({
@@ -30,7 +44,23 @@ $('.galeria-carousel').slick({
   focusOnSelect: true,
   centerPadding: '0px',
   prevArrow: '<img src="img/slider-galeria-left.svg" class="galeria-slider-arrows galeria-arrow-left" alt="">',
-  nextArrow: '<img src="img/slider-galeria-right.svg" class="galeria-slider-arrows galeria-arrow-right" alt=""></img>'
+  nextArrow: '<img src="img/slider-galeria-right.svg" class="galeria-slider-arrows galeria-arrow-right" alt=""></img>',
+  mobileFirst: true,
+  responsive:[
+    {
+      breakpoint: 315,
+      setttings:{
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 600,
+        infinite: true,
+        arrows: false,
+        dots: false,
+        centerMode: false,
+        focusOnSelect: false
+      }
+    }
+  ]
 })
 
 //Map
@@ -89,3 +119,22 @@ $('.team').on('mouseout', function() {
   $(this).find('img').attr('src', '../img/team.svg');
 });
 
+var burgerButton = document.getElementsByClassName("toggle-button");
+var p;
+for(p = 0; p < burgerButton.length; p++){
+  burgerButton[p].onclick = function(){
+    var menu = document.getElementById('nav-menu');
+    if(menu.style.maxHeight){
+       menu.style.maxHeight = null;
+    }
+    else{
+      menu.style.maxHeight = menu.scrollHeight + "px";
+    }
+    if(menu.style.marginTop){
+      menu.style.marginTop = null;
+    }
+    else{
+      menu.style.marginTop = 10 + "px";
+    }
+  }
+}
