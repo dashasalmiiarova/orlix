@@ -48,15 +48,15 @@ $('.galeria-carousel').slick({
   mobileFirst: true,
   responsive:[
     {
-      breakpoint: 315,
-      setttings:{
+      breakpoint: 310,
+      settings:{
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 600,
         infinite: true,
         arrows: false,
         dots: false,
-        centerMode: false,
+        centerMode: true,
         focusOnSelect: false
       }
     }
