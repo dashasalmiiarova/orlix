@@ -14,8 +14,8 @@
 <body>
     <div class="info-line">
         <div class="contact-info container">
-            <a class="phone-contact" href="tel:+48 229 384 567"><i class="fas fa-phone-alt icon-phone"></i> +48 229 384 567</a>
-            <a class="email-contact" href="mailto:info@orlix.online"><i class="fas fa-envelope icon-mail"></i> info@orlix.online</a>
+            <a class="phone-contact t-con-res" href="tel:+48 229 384 567"><i class="fas fa-phone-alt icon-phone icon-info"></i> +48 229 384 567</a>
+            <a class="email-contact t-con-res" href="mailto:info@orlix.online"><i class="fas fa-envelope icon-mail icon-info"></i> info@orlix.online</a>
         </div>
             
     </div>
@@ -30,6 +30,18 @@
             </ul>
         </div>
     </header>
+    <div class="mobile-menu">
+        <div class="top-menu">
+           <a href="index.html"><img class="mobile-logo" src="img/logo.svg" alt="" ></a> 
+           <div class="toggle-button" id="toggle" href="#"><i class="fas fa-ellipsis-h toggle-button-i"></i></div>
+        </div>
+        <ul id="nav-menu" class="menu-mobile-block">
+            <li class="menu-item"><a class="menu-item-link-mobile" href="#">Strona Główna</a> </li>
+            <li class="menu-item"><a class="menu-item-link-mobile" href="projekty.html">Naze projekty</a> </li>
+            <li class="menu-item"><a class="menu-item-link-mobile" href="onas.html">O nas</a> </li>
+            <li class="menu-item"><a class="menu-item-link-mobile" href="kontakt.html">Kontakt</a> </li>
+        </ul>
+    </div>
     <div class="contant">
         <div class="isotop-galery container">
             <div class="portfolio-grid-filter">
@@ -42,7 +54,7 @@
                     <button data-filter='.projekty' class="grid-button underline-from-left">Projekty architektoniczne</button>
                 </div> 
             </div>
-            <div class="portfolio-grid grid" data-ignore-hash="true">
+            <div class="portfolio-grid grid" data-ignore-hash="true" id="portfolio">
                 <div class="gutter-sizer"></div>
                 <div class="grid-item domy exterior-iso" data-category="domy exterior-iso">
                     <a class="ling-img" href="img/isotop1.jpg"><img src="img/isotop1.jpg" alt="" class="grid-img"></a>
@@ -117,6 +129,7 @@
                     <a class="ling-img" href="img/isotop24.jpg"><img src="img/isotop24.jpg" id="counter2" alt="" class="grid-img"> </a>
                 </div>
             </div>
+            <input type="button" class="slide-info-button grid-button-show" id="button-show" value="Pokaż wszystko"> </input>
         </div>
         <div class="o-nas container2">
             <div class="o-nas-img">

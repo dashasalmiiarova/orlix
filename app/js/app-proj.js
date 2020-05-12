@@ -123,3 +123,47 @@ $('.ling-img').magnificPopup({
   type: 'image',
   gallery:{enabled:true}
 });
+
+var burgerButton = document.getElementsByClassName("toggle-button");
+var p;
+for(p = 0; p < burgerButton.length; p++){
+  burgerButton[p].onclick = function(){
+    var menu = document.getElementById('nav-menu');
+    if(menu.style.maxHeight){
+       menu.style.maxHeight = null;
+    }
+    else{
+      menu.style.maxHeight = menu.scrollHeight + "px";
+
+    }
+    if(menu.style.marginTop){
+      menu.style.marginTop = null;
+    }
+    else{
+      menu.style.marginTop = 10 + "px";
+    }
+  }
+}
+
+var gridShow = document.getElementsByClassName("grid-button-show");
+var d;
+for(d = 0; d < gridShow.length; d++){
+  gridShow[d].onclick = function(){
+    var port = document.getElementById('portfolio');
+    if(port.style.maxHeight){
+      port.style.maxHeight = null;
+    }
+    else{
+      port.style.maxHeight = port.scrollHeight + "px";
+      
+    }
+  }
+}
+var show = document.getElementById('button-show')
+show.addEventListener('click', function(){
+  if(show.value === "Pokaż wszystko"){
+    show.value = "Pokaż mniej"
+  } else{
+    show.value = "Pokaż wszystko"
+  }
+})

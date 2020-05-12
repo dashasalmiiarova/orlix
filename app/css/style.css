@@ -162,7 +162,7 @@ button:active, button:focus {
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale !important;
     position: relative;
     overflow: hidden;
 }
@@ -441,15 +441,16 @@ button:active, button:focus {
 .exterior-info{
     transform: translate(-45px, 80px);
 }
-.interior-title-inside{
-    transform: translate(-120px, 25px);
-}
 .interior-subtitle{
     font-size: 50px;
+    text-align: center;
 }
 .interior-title{
     font-size: 24px;
     font-weight: 700;
+    transform: translate(120px, -40px);
+    width: 100px;
+    /* transform: translate(-120px, 25px); */
 }
 .ul-interior{
     display: flex;
@@ -481,9 +482,9 @@ button:active, button:focus {
     z-index: 2;
 }
 .interior-titles{
-    display: flex;
-    justify-content: center !important;
+    height: 70px;
 }
+
 .galeria{
     background-image: url(../img/cechy-bg.png);
     background-repeat: no-repeat;
@@ -503,11 +504,7 @@ button:active, button:focus {
 }
 /* div */
 .galeria-slide{
-    /* height: 143px; */
     margin: auto;
-    /* -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    transform: scale(0.9); */
 }
 .galeria-slick-img{
     width: 220px;
@@ -515,17 +512,13 @@ button:active, button:focus {
     transform: scale(0.9);
     margin-top: 50px;
 }
-/* .galeria-carousel img{
-    width: 202px;
-    transform: scale(0.9);
-} */
+
 .galeria-carousel .slick-current img{
     width: 100%;
     /* height: 100%; */
     transform: scale(1.3);
     margin: auto;
 }
-
 .galeria-slider-arrows{
     position: relative;
 }
@@ -890,6 +883,7 @@ input:focus:-ms-input-placeholder {
     transition: all 0.3s ease-in-out;
     margin-right: 40px;
     margin-bottom: 40px;
+    background-color: white;
 }
 .grid-button:hover{
     border: none;
@@ -958,7 +952,8 @@ input:focus:-ms-input-placeholder {
 }
 .nas-title{
     color: white;
-    transform: translate(-85px, 7px);
+    /* transform: translate(-85px, 7px); */
+    transform: translate(25px,-41px);
 }
 .onas-p-div{
     margin-top: 40px;
@@ -1041,7 +1036,6 @@ input:focus:-ms-input-placeholder {
 .kont-block{
     padding: 26px 33px 40px 33px;
     width: 401px;
-    
 }
 .kon-black{
     background-color: #212121;
@@ -1140,6 +1134,9 @@ input:focus:-ms-input-placeholder {
 .mobile-menu{
     display: none;
 }
+.grid-button-show{
+    display: none;
+}
 
 /* Responsive - start with phone */
 @media screen and (min-width: 315px) and (max-width: 425px){
@@ -1173,6 +1170,7 @@ input:focus:-ms-input-placeholder {
         width: 90%;
         margin: auto;
         margin-top: 7px;
+        /* box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10); */
     }
     .mobile-logo{
         width: 200px;
@@ -1186,17 +1184,18 @@ input:focus:-ms-input-placeholder {
         margin: 0;
         overflow: hidden;
         transition: all 0.5s ease-in-out;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
     }
     .menu-mobile-block li a{
         text-decoration: none;
         color: #66667E;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 18px;
         transition: color 0.5s ease;
         
     }
     .menu-mobile-block li{
-        margin-bottom: 23px;
+        margin-bottom: 35px;
         text-align: center;
     }
     .toggle-button-i{
@@ -1290,13 +1289,13 @@ input:focus:-ms-input-placeholder {
         align-items: center;
     }
     .interior-info{
-        width: 290px;
+        width: 270px;
         height: 370px;
         padding: 15px;
         order: 2;
     }
-    .interior-titles{
-        justify-content: unset !important;
+    .interior-title{
+        transform: translate(80px, -40px);
     }
     .interior-info-tran{
         transform: none;
@@ -1316,7 +1315,6 @@ input:focus:-ms-input-placeholder {
     .exterior-info{
         transform: none;
     }
-   
     .galeria{
         height: 363px;
         margin-top: 40px;
@@ -1331,7 +1329,8 @@ input:focus:-ms-input-placeholder {
         margin-top: unset;
     }
     .galeria-title-inside{
-        transform: translate(20px, -25px);
+        /* transform: translate(20px, -25px); */
+        transform: translate(20px,-35px);
     }
     .sprzedaz{
         margin-top: 35px;
@@ -1345,6 +1344,7 @@ input:focus:-ms-input-placeholder {
     .sprzedaz-title-inside{
         margin-left: -350px;
         margin-top: 15px;
+        transform: translate(394px,-46px);
         /* transform: translate(80px, -25px); */
     }
     .sprzedaz-info{
@@ -1427,7 +1427,108 @@ input:focus:-ms-input-placeholder {
     .slider-arrows{
         display: none !important;
     }
-    .galeria-slider-arrows{
-        display: none !important;
+    .column-info{
+        display: block;
+    }
+
+    /* --------------------------Onas ------------------------------   */
+    .o-nas-subtitle{
+        font-size: 43px;
+    }
+    .sprzedaz-title{
+        height: 45px;
+    }
+    .spredaz{
+        margin-top: 20px;
+    }
+    .counter-div{
+        flex-direction: column;
+    }
+    .counter-block1{
+        margin-bottom: 20px;
+    }
+    .onas-white-block{
+        box-shadow: none;
+        padding: 0;
+        background-color: unset;
+        margin-top: 70px;
+    }
+    .insie-block{
+        flex-direction: column;
+        justify-content: unset;
+        margin-top: 35px;
+    }
+    .inside-block{
+        flex-direction: column;
+        justify-content: unset;
+        
+    }
+    .inside-block-p-div{
+        width: unset;
+        margin-top: 25px;
+    }
+    .onas-new-info{
+        height: 1490px;
+    }
+    .onas-img-o{
+        order: 1;
+    }
+    .cechy-subtitle{
+        font-size: 27px;
+    }
+    .galeria-subtitle{
+        font-size: 38px;
+    }
+    .onas-p-div{
+        margin-top: 30px;
+    }
+    /* --------------------Projekty----------------------------- */
+    .isotop-galery{
+        margin-top: 20px;
+    }
+    .grid-button{
+        margin-right: 13px;
+        margin-bottom: 17px;
+    }
+    .grid{
+        width: 270px;
+        margin: auto;
+    }
+    /* .portfolio-grid{
+        max-height: 4000px;
+    } */
+    .portfolio-grid{
+        max-height: 450px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .grid-img{
+        width: 100% !important;
+
+    }
+    .grid-button-show{
+        display: block;
+        text-align: center !important;
+    }
+    /* -------------------------Kontakt------------------------------ */
+    .kontact-block-div{
+        flex-direction: column;
+        justify-content: unset;
+        height: unset;
+    }
+    .kont-block{
+        /* width: 90%;*/
+        margin: auto; 
+        width: 220px;
+        padding: 16px 25px 30px 25px;
+    }
+    .kon-block-button{
+        padding: 18px 15px;
+    }
+    .kon-blue{
+        margin-top: 15px;
+    }
+    .kon-block-title{
+        font-size: 23px;
     }
 }

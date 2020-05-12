@@ -13,36 +13,55 @@
     <title>O nas</title>
 </head>
 <body>
+    <!-- <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+          </div>
+    </div> -->
     <div class="info-line">
         <div class="contact-info container">
-            <a class="phone-contact" href="tel:+48 229 384 567"><i class="fas fa-phone-alt icon-phone"></i> +48 229 384 567</a>
-            <a class="email-contact" href="mailto:info@orlix.online"><i class="fas fa-envelope icon-mail"></i> info@orlix.online</a>
+            <a class="phone-contact t-con-res" href="tel:+48 229 384 567"><i class="fas fa-phone-alt icon-phone icon-info"></i> +48 229 384 567</a>
+            <a class="email-contact t-con-res" href="mailto:info@orlix.online"><i class="fas fa-envelope icon-mail icon-info"></i> info@orlix.online</a>
         </div>
-            
     </div>
     <header>
         <div class="navbar container">
             <a href="index.html"> <img src="img/logo.svg" alt=""> </a>
             <ul class="menu">
-                <li class="menu-item"> <a class="menu-item-link underline" href="index.html">Strona Główna</a> </li>
+                <li class="menu-item"> <a class="menu-item-link underline " href="index.html">Strona Główna</a> </li>
                 <li class="menu-item"> <a class="menu-item-link underline" href="projekty.html">Naze projekty</a> </li>
                 <li class="menu-item"> <a class="menu-item-link underline" href="#">O nas</a> </li>
                 <li class="menu-item"> <a class="menu-item-link kontakt-button" href="kontakt.html">Kontakt</a> </li>
             </ul>
         </div>
     </header>
+    <div class="mobile-menu">
+        <div class="top-menu">
+           <a href="index.html"><img class="mobile-logo" src="img/logo.svg" alt="" ></a> 
+           <div class="toggle-button" id="toggle" href="#"><i class="fas fa-ellipsis-h toggle-button-i"></i></div>
+        </div>
+        <ul id="nav-menu" class="menu-mobile-block">
+            <li class="menu-item"><a class="menu-item-link-mobile" href="index.html">Strona Główna</a> </li>
+            <li class="menu-item"><a class="menu-item-link-mobile" href="projekty.html">Naze projekty</a> </li>
+            <li class="menu-item"><a class="menu-item-link-mobile" href="#">O nas</a> </li>
+            <li class="menu-item"><a class="menu-item-link-mobile" href="kontakt.html">Kontakt</a> </li>
+        </ul>
+    </div>
     <div class="contant">
         <div class="onas-new-info">
             <div class="onas-main cechy-o-nas">
                 <div class="onas-info-cont container2">
                     <div class="onas-inside cechy-inside">
                         <div class="o-nas-titles">
-                            <div class="o-nas-subtitle">
+                            <h2 class="onas-subtitle-h2 nas-subtitle">O nas</h2>
+                            <h3 class="onas-title-h3 nas-title">O nas</h3>
+                            <!-- <div class="o-nas-subtitle">
                                 <h2 class="onas-subtitle-h2 nas-subtitle">O nas</h2>
                             </div>
                             <div class="cechy-title-inside">
                                 <h3 class="onas-title-h3 nas-title">O nas</h3>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="onas-p-div">
                             <p class="o-nas-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc ante, aliquet a massa non, tincidunt lacinia purus. <br> Fusce dictum ac justo volutpat malesuada. Donec ornare scelerisque justo. Donec fringilla blandit eleifend. Nunc </p>
@@ -78,10 +97,10 @@
                                 </div>
                             </div>
                             <div class="insie-block block-mt">
-                                <div class="inside-block-p-div">
+                                <div class="inside-block-p-div onas-img-o">
                                     <p class="inside-block-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc ante, aliquet a massa non, tincidunt lacinia purus. <br> <br> Fusce dictum ac justo volutpat malesuada. Donec ornare scelerisque justo. Donec fringilla blandit eleifend. Nunc augue diam, fermentum vitae</p>
                                 </div>
-                                <div class="inside-block-img-div">
+                                <div class="inside-block-img-div onas-p-o">
                                     <img src="img/onas-block2.jpg" alt="" class="inside-block-img">
                                 </div>
                             </div>
@@ -205,7 +224,7 @@
             <div class="galeria-inside container2">
                 <div class="cechy-titles">
                     <div class="o-nas-subtitle">
-                        <h2 class="onas-subtitle-h2 cechy-subtitle">Galeria</h2>
+                        <h2 class="onas-subtitle-h2 cechy-subtitle galeria-subtitle">Galeria</h2>
                     </div>
                     <div class="galeria-title-inside">
                         <h3 class="onas-title-h3 cechy-title">Galeria</h3>
@@ -263,6 +282,7 @@
                         <div class="youtube-div social">
                             <a href="https://www.youtube.com/" class="footer-icon"><i class="fab fa-youtube"></i></a>
                         </div>
+                    </div>
                 </div>
                 
             </div>
@@ -272,10 +292,10 @@
                         <h4 class="footer-title-h4">Korzystne Linki</h4>
                     </div>
                     <div class="menu-footer">
-                        <a href="#" class="menu-links">Galeria</a>
-                        <a href="#" class="menu-links">Kontakt</a>
+                        <a href="projekty.html" class="menu-links">Galeria</a>
+                        <a href="kontakt.html" class="menu-links">Kontakt</a>
                         <a href="#" class="menu-links">Polityka prywatności</a>
-                        <a href="#" class="menu-links">Nasze projekty</a>
+                        <a href="projekty.html" class="menu-links">Nasze projekty</a>
                     </div>
                 </div>
                
