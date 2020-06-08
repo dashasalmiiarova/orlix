@@ -145,25 +145,25 @@ for(p = 0; p < burgerButton.length; p++){
   }
 }
 
-var gridShow = document.getElementsByClassName("grid-button-show");
-var d;
-for(d = 0; d < gridShow.length; d++){
-  gridShow[d].onclick = function(){
-    var port = document.getElementById('portfolio');
-    if(port.style.maxHeight){
-      port.style.maxHeight = null;
-    }
-    else{
-      port.style.maxHeight = port.scrollHeight + "px";
-      
-    }
-  }
-}
-var show = document.getElementById('button-show')
-show.addEventListener('click', function(){
-  if(show.value === "Pokaż wszystko"){
-    show.value = "Pokaż mniej"
-  } else{
-    show.value = "Pokaż wszystko"
-  }
-})
+// var gridShow = document.getElementsByClassName("grid-button-show");
+// var d;
+// for(d = 0; d < gridShow.length; d++){
+//   gridShow[d].onclick = function(){
+//     var port = document.getElementById('portfolio');
+//     if(port.style.maxHeight){
+//       port.style.maxHeight = null;
+//     }
+//     else{
+//       port.style.maxHeight = "3170px";
+//       port.style.height = "3170px";
+//     }
+//   }
+// }
+// var show = document.getElementById('button-show')
+// show.addEventListener('click', function(){
+//   if(show.value === "Pokaż wszystko"){
+//     show.value = "Pokaż mniej"
+//   } else{
+//     show.value = "Pokaż wszystko"
+//   }
+// })
