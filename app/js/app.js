@@ -18,7 +18,6 @@ $('.slogan-carousel').slick({
   centerPadding: '0px',
   prevArrow: '<img src="img/slider-arrow-left.svg" class="slider-arrows slider-arrow-left" alt="">',
   nextArrow: '<img src="img/slider-arrow-right.svg" class="slider-arrows slider-arrow-right" alt=""></img>',
-  mobileFirst: true,
   responsive:[
     {
       breakpoint: 314,
@@ -29,9 +28,32 @@ $('.slogan-carousel').slick({
         infinite: true,
         arrows: false,
         dots: false
-      },
+      }
+    },
+    {
       breakpoint: 425,
       settings:{
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 841,
+      settings:{
+        arrows: false,
+        centerPadding: 50
+      }
+    },
+    {
+      breakpoint:1023,
+      settings:{
+        arrows: false,
+        centerPadding: 50
+      }
+    },
+    {
+      breakpoint: 1439,
+      settings:{
+        centerPadding: 50,
         arrows: false
       }
     }
@@ -75,6 +97,24 @@ $('.galeria-carousel').slick({
         dots: false,
         centerMode: true,
         focusOnSelect: true
+      }
+    },
+    {
+      breakpoint: 840,
+      settings:{
+        arrows: false
+      }
+    },
+    {
+      breakpoint:1023,
+      settings:{
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 1439,
+      settings:{
+        arrows: false
       }
     }
   ]

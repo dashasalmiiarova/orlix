@@ -3,7 +3,8 @@ var iso = new Isotope( '.grid', {
 layoutMode: 'fitRows',
 itemSelector: '.grid-item',
 fitRows: {
-    gutter: '.gutter-sizer'
+    gutter: '.gutter-sizer',
+    transitionDuration: '0.8s'
   }
 })
 // bind filter button click
@@ -46,52 +47,6 @@ map.on('click', function(e) {
     .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
     .addTo(map);
 });
-
-// var iso = new Isotope( '.grid', {
-//     itemSelector: '.grid-item',
-//     layoutMode: 'fitRows',
-//     fitRows: {
-//         gutter: '.gutter-sizer'
-//         }
-//         });
-//     var filterFns = {
-//         numberGreaterThan50: function( itemElem ) {
-//           var number = itemElem.querySelector('.number').textContent;
-//           return parseInt( number, 10 ) > 50;
-//         },
-//         ium: function( itemElem ) {
-//           var name = itemElem.querySelector('.name').textContent;
-//           return name.match( /ium$/ );
-//         }
-//       };
-//       var filtersElem = document.querySelector('.portfolio-filer');
-//       filtersElem.addEventListener( 'click', function( event ) {
-//         // only work with buttons
-//         if ( !matchesSelector( event.target, 'button' ) ) {
-//           return;
-//         }
-//         var filterValue = event.target.getAttribute('data-filter');
-//         // use matching filter function
-//         filterValue = filterFns[ filterValue ] || filterValue;
-//         iso.arrange({ filter: filterValue });
-//       });
-    
-//       var buttonGroups = document.querySelectorAll('.portfolio-filer');
-//       for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
-//         var buttonGroup = buttonGroups[i];
-//         radioButtonGroup( buttonGroup );
-//       }
-      
-//       function radioButtonGroup( buttonGroup ) {
-//         buttonGroup.addEventListener( 'click', function( event ) {
-//           // only work with buttons
-//           if ( !matchesSelector( event.target, 'button' ) ) {
-//             return;
-//           }
-//           buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
-//           event.target.classList.add('is-checked');
-//         });
-//       }
 
 $('.quality').on('mouseover', function() {
   $(this).find('img').attr('src', '../img/qualityw.svg');
@@ -144,26 +99,3 @@ for(p = 0; p < burgerButton.length; p++){
     }
   }
 }
-
-// var gridShow = document.getElementsByClassName("grid-button-show");
-// var d;
-// for(d = 0; d < gridShow.length; d++){
-//   gridShow[d].onclick = function(){
-//     var port = document.getElementById('portfolio');
-//     if(port.style.maxHeight){
-//       port.style.maxHeight = null;
-//     }
-//     else{
-//       port.style.maxHeight = "3170px";
-//       port.style.height = "3170px";
-//     }
-//   }
-// }
-// var show = document.getElementById('button-show')
-// show.addEventListener('click', function(){
-//   if(show.value === "Pokaż wszystko"){
-//     show.value = "Pokaż mniej"
-//   } else{
-//     show.value = "Pokaż wszystko"
-//   }
-// })
