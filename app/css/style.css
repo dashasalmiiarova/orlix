@@ -1598,7 +1598,6 @@ label{
         width: 260px;
     }
 }
-
 /* tablets */
 @media screen and (min-width: 426px) and (max-width: 625px){
     .info-line{
