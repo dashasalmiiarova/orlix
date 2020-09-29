@@ -1,9 +1,3 @@
-/* html{
-    box-sizing: border-box;
-}
-*, *:after, *:before{
-    box-sizing:inherit;
-} */
 *{
     margin: 0;
     padding: 0;
@@ -546,8 +540,12 @@ button:active, button:focus {
     width: 200px !important;
 }
 .sprzedaz-title-inside{
-    width: 200px;
-    transform: translate(418px, -35px);
+    /* width: 200px; */
+    /* transform: translate(490px, -35px); */
+    transform: translate(17px,-36px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .sprzedaz-top-p{
     width: 70%;
@@ -1059,9 +1057,6 @@ input:focus:-ms-input-placeholder {
 .kon-line{
     margin-top: 30px;
 }
-/* .kon-line-inside{
-    margin-bottom: 10px;
-} */
 .kon-ad{
     font-size: 16px;
     color: white;
@@ -1361,9 +1356,6 @@ label{
     .sprzedaz-subtitle{
         font-size: 30px;
     }
-    .sprzedaz-title-inside{
-        transform: translate(394px,-46px);
-    }
     .sprzedaz-info{
         flex-direction: column;
     }
@@ -1578,7 +1570,6 @@ label{
         height: 200px;
     }
 }
-
 @media screen and (min-width: 375px) and (max-width: 425px){
     
     .submit-button{
@@ -1592,7 +1583,7 @@ label{
         height: 1315px;
     }
     .sprzedaz-title-inside{
-        transform: translate(80px,-33px);
+        transform: translate(17px,-29px);
     }
     .kont-block{
         width: 260px;
@@ -1804,12 +1795,6 @@ label{
     .sprzedaz-subtitle{
         font-size: 30px;
     }
-    .sprzedaz-title-inside{
-        /* margin-left: -350px;
-        margin-top: 15px; */
-        transform: translate(450px,-46px);
-        /* transform: translate(80px, -25px); */
-    }
     .sprzedaz-info{
         flex-direction: column;
     }
@@ -1990,7 +1975,7 @@ label{
     }
     /* -------------------------Kontakt------------------------------ */
     .sprzedaz-title-inside{
-        transform: translate(70%, -70%);
+        transform: translate(17px, -29px);
     }
     .kontact-block-div{
         flex-direction: column;
@@ -2041,7 +2026,6 @@ label{
         height: 200px;
     }
 }
-
 @media screen and (min-width: 626px) and (max-width: 840px){
     .info-line{
         width: 100%;
@@ -2431,7 +2415,7 @@ label{
     }
     /* -------------------------Kontakt------------------------------ */
     .sprzedaz-title-inside{
-        transform: translate(100%, -70%);
+        transform: translate(17px, -29px);
     }
     .sprzedaz-top-p{
         width: 90%;
@@ -2485,7 +2469,6 @@ label{
         height: 200px;
     }
 }
-
 @media screen and (min-width: 841px) and (max-width: 1023px){
     .info-line{
         width: 100%;
@@ -2854,7 +2837,6 @@ label{
     .menu-mobile-onas{
         box-shadow: none;
     }
-    
     /* --------------------Projekty----------------------------- */
     .isotop-galery{
         margin-top: 20px;
@@ -2880,7 +2862,7 @@ label{
     }
     /* -------------------------Kontakt------------------------------ */
     .sprzedaz-title-inside{
-        transform: translate(150%, -70%);
+        transform: translate(17px,-29px);
     }
     .sprzedaz-top-p{
         width: 90%;
@@ -3254,9 +3236,9 @@ label{
     .submit-button{
         float: none;
     }
-    .sprzedaz-title-inside{
-        transform: translate(170%, -70%);
-    }
+    /* .sprzedaz-title-inside{
+    
+    } */
     .sprzedaz-top-p{
         width: 90%;
     }
@@ -3615,7 +3597,7 @@ label{
         float: none;
     }
     .sprzedaz-title-inside{
-        transform: translate(220%, -70%);
+        transform: translate(1%, -60%);
     }
     .sprzedaz-top-p{
         width: 90%;
@@ -3663,14 +3645,14 @@ label{
 
 @media screen and (min-width: 426px) and (max-width: 550px){
     .sprzedaz-title-inside{
-        transform: translate(60%,-70%);
+        transform: translate(17px,-29px);
     }
 }
-@media screen and (min-width:765px) and (max-width:840px){
+/* @media screen and (min-width:765px) and (max-width:840px){
     .sprzedaz-title-inside{
-        transform:translate(120%, -70%);
+        transform:translate(120%, -70%); 
     }
-}
+} */
 @media screen and (min-width: 1441px){
     .container{
         width: 1138px;
