@@ -540,8 +540,6 @@ button:active, button:focus {
     width: 200px !important;
 }
 .sprzedaz-title-inside{
-    /* width: 200px; */
-    /* transform: translate(490px, -35px); */
     transform: translate(17px,-36px);
     display: flex;
     flex-direction: column;
